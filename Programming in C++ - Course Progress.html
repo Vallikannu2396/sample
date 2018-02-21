@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<html lang="en_US"
+    class="">
+  <head>
+    <base href="https://onlinecourses.nptel.ac.in/noc16_cs17/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="/modules/nptel/assets/img/favicon.ico"/>
+    <meta charset="utf-8">
+    
+  <title>
+    Programming in C++ -
+    
+  
+  Course Progress
+
+  </title>
+
+    <!-- jQuery should be imported first -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/modules/ajax_registry/assets/js/registry.js"></script>
+
+
+    <!-- The following translated strings are used in activity-generic.js and should be
+    declared before that file is imported. -->
+    <script>
+      // inline translations
+      var trans = {};
+
+      
+      trans.CHECK_ANSWER_TEXT =
+          " Check Answer ";
+
+      
+      trans.CHECK_ANSWERS_TEXT =
+          " Check Answers ";
+
+      
+      trans.SHOW_ANSWER_TEXT =
+          " Skip and Show Answer ";
+
+      
+      trans.SAVE_ANSWERS_TEXT =
+          " Save Answers ";
+
+      
+      trans.SAVE_DRAFT_TEXT =
+          " Save Draft ";
+
+      
+      trans.SUBMIT_ANSWERS_TEXT =
+          " Submit Answers ";
+
+      
+      trans.SUBMIT_ASSIGNMENT_TEXT =
+          " Submit Assignment ";
+
+      
+      trans.SUBMIT_REVIEW_TEXT =
+          " Submit Review ";
+
+      
+      trans.SELECT_ANSWER_PROMPT =
+          " Please click one of the buttons for your answer. ";
+
+      
+      trans.ALL_CORRECT_TEXT =
+          " All your answers are correct! ";
+
+      
+      trans.NUM_CORRECT_TEXT =
+          " Number of questions you answered correctly ";
+
+      
+      trans.YOUR_SCORE_TEXT =
+          " You received a score on this assessment of ";
+
+      
+      trans.LESSONS_TO_REVIEW_TEXT =
+          " Here are lessons you could review to improve your score ";
+
+      
+      trans.PERFECT_SCORE_SAVE_TEXT =
+          " Congratulations! Press the \&#39;Submit Answers\&#39; button to submit your grade. ";
+
+      
+      trans.GENERIC_SAVE_TEXT =
+          " Press the \&#39;Submit Answers\&#39; button below to save your scores. You can also edit your answers above before clicking \&#39;Submit Answers\&#39;. ";
+
+      
+      trans.SUBMIT_ASSIGNMENT_CONFIRMATION =
+          " Are you sure you want to submit this assignment? ";
+
+      
+      trans.SUBMIT_REVIEW_CONFIRMATION =
+          " Are you sure you want to submit this review? ";
+
+      
+      trans.CONFIRMATION_EXPLANATION =
+          " You cannot edit or delete it after you have done so. ";
+    </script>
+
+    
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  <link href="/modules/nptel/assets/css/nptel.css" rel="stylesheet" type="text/css">
+
+  <link href="assets/css/minimal.mobile.css" rel="stylesheet" type="text/css"
+        media="only screen and (max-device-width: 1024px)">
+
+  <!-- jQuery should be imported first -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script src="/modules/oeditor/resources/butterbar.js"></script>
+  <link rel="stylesheet" type="text/css"
+      href="/modules/oeditor/resources/butterbar.css" media="screen" />
+  <script src="/modules/nptel/assets/js/main.js"></script>
+
+  <script src="//www.google.com/jsapi" type="text/javascript"></script>
+  <script type='text/javascript'>
+    function addScript(src, callback) {
+      var r = false;
+      var existed = true;
+      var element = document.getElementById(src);
+      if (!element) {
+        existed = false;
+        element = document.createElement('script');
+        element.src = src;
+        element.type = 'text/javascript';
+        element.setAttribute('id', src);
+      }
+      if (callback != null) {
+        element.onload = element.onreadystatechagne = function() {
+          if (!r && (!this.readyState || this.readyState == 'complete')) {
+            r = true;
+            callback();
+          }
+        }
+      }
+      if (!existed) document.body.appendChild(element);
+    }
+    function getStudentProgress() {
+      
+      ajax_server.get_progress();
+      
+    }
+    function prettyfyCode() {
+      prettyPrint();
+    }
+    function showButterBar() {
+      
+      var regConfirmationMsg = "Thank you for registering for the course. Click the Announcements tab for important information.";
+      if(window.location.hash == '#registration_confirmation') {
+        cbShowMsg(regConfirmationMsg);
+        setTimeout(function() {cbHideMsg();}, 20000);
+      }
+      
+      var regClosedMsg = "Registrations for this course are not open.";
+      if(window.location.hash == '#registration_closed') {
+        cbShowMsg(regClosedMsg);
+        setTimeout(function() {cbHideMsg();}, 20000);
+      }
+    }
+    function loadOtherJs(callback) {
+      var c = getStudentProgress;
+      if (null != callback) {
+        c = function() {
+           callback();
+           getStudentProgress();
+        }
+      }
+      addScript('/assets/lib/google-code-prettify/prettify.js', prettyfyCode);
+      addScript('/modules/nptel/assets/js/activity-generic-1.3.js', null);
+      addScript('/modules/nptel/assets/js/main.js', c);
+    }
+    function downloadJsAtLoad() { loadOtherJs(null); }
+    google.setOnLoadCallback(downloadJsAtLoad);
+  </script>
+ 
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Course",
+      "@id": "https://onlinecourses.nptel.ac.in/noc16_cs17/",
+      "name": "Programming in C++",
+      "description": "&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;
+&lt;title&gt;Untitled Document&lt;/title&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+.main {
+	font-family: &#34;Arial Narrow&#34;;
+	font-size: 16px;
+	color: #00F;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding-top:10px;
+	
+}
+
+.normal {
+	font-family: &#34;Arial&#34;;
+	font-size: 13px;
+	color: #000;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:5px;
+	text-align:justify;
+	
+	}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div class=&#34;main&#34;&gt;About The Course &lt;/div&gt;
+&lt;div class=&#34;normal&#34;&gt;
+  &lt;p&gt;There  has been a continual debate on which programming language/s to learn, to use.  As the latest TIOBE Index for April 2016 indicates – Java (21%), C (14%), C++  (6%), C#(4%), and Python (3%) together control nearly half the programming  community. Given this, it is still important to learn C and C++ because of the  efficiency they offer. While we appreciate that Java is good for applications,  for graphics; and we acknowledge that Python is appropriate for portable  software, engineering problem solving, and graphics; it is worth bearing in  mind that the JVM and Python interpreter are indeed written in C++, making C++  the father of all languages today. &lt;/p&gt;
+  &lt;p&gt;Well,  hence, C++ is the systems language. Why should I learn it if my primary focus  is on applications? This is where the recent updates of C++, namely, C++11,  C++14, and C++17 offer excellent depths and flexibility for C++ that no  language can match. These extensions attempt to alleviate some of the  long-standing shortcomings for C++ including porous resource management,  error-prone pointer handling, expression semantics and better readability. &lt;/p&gt;
+  &lt;p&gt;The  present course builds up on the knowledge of C programming and basic data  structure (array, list, stack, queue etc.) to create a strong familiarity with  C++98 and C++03. Besides the constructs, syntax and semantics of C++ (over C),  we also focus on various idioms of C++ and attempt to go to depth with every  C++ feature justifying and illustrating them with several examples and  assignment problems. On the way, we illustrate various OOP concepts. &lt;/p&gt;
+While  this course can be understood independently (after a course in C programming),  it would help in developing understanding in OOP. Hence this course is advised  in conjunction with OOP.&lt;/div&gt;
+&lt;div class=&#34;main&#34;&gt;Intended Audience&lt;/div&gt;
+&lt;div class=&#34;normal&#34;&gt;
+  &lt;p&gt;Core  Course&lt;br /&gt;
+UG/PG  Course  &lt;br /&gt;
+BCA,  MCA, B.Tech., M.Tech.&lt;/div&gt;
+&lt;div class=&#34;main&#34;&gt;Pre-requisites &lt;/div&gt;
+&lt;div class=&#34;normal&#34;&gt;1. Basic  Knowledge of Programming &amp;amp; Data Structure&lt;br /&gt;
+  2. C Programming
+  &lt;br /&gt;
+  3. Attending  a course on OOP with this course will help&lt;/div&gt;
+&lt;div class=&#34;main&#34;&gt;Industry Support - List of Companies/Industry that will Recognize/value this online course &lt;/div&gt;
+&lt;div class=&#34;normal&#34;&gt;Programming  in C++ is so fundamental that all companies dealing with systems as well as  application development (including web, IoT, embedded systems) have a need for  the same. These include – Microsoft, Samsung, Xerox, Yahoo, Google, IBM, TCS,  Infosys, Amazon, Flipkart, etc.&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+",
+      "provider": {
+        "@type":"Organization",
+        "name":"National Programme on Technology Enhanced Learning",
+        "sameAs":"http://nptel.iitm.ac.in"
+      },
+      "grantsCredential": "False",
+      "isAccessibleForFree" : "",
+
+      "hasCourseInstance" : [
+      {
+        "inLanguage" : "en",
+        "audioLanguage" : ["en"],
+        "startDate" : "July 18, 2016 ",
+        }
+      ],
+      
+        "image" : "/modules/nptel/assets/img/nptel-logo.png",
+      
+
+      "partOfEducationalTrack" : [
+        "/explorer/search?category=",
+      ]
+    }
+  </script>
+
+
+    
+      <link rel="stylesheet" href="/modules/i18n_dashboard/resources/css/global_i18n.css" type="text/css">
+    
+
+    
+
+    <script>
+      var eventXsrfToken = '1473950196/f9pI1mSPVtG7pXS47wfi8w==';
+      
+        var gcbCanPostTagEvents = true;
+      
+      
+        var gcbCanPostPageEvents = true;
+      
+      
+        var gcbCanPostEvents = true;
+      
+
+      
+        var transientStudent = false;
+      
+    </script>
+
+    
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    
+
+    <script>
+      function gcb_edit_hook_point(key) {
+        window.location=('dashboard?action=edit_html_hook&key=' +
+            encodeURIComponent(key));
+      }
+      $(function() {
+        function parseJson(s) {
+          var xssiPrefix = ")]}'";
+          return JSON.parse(s.replace(xssiPrefix, ''));
+        }
+
+        $("#locale-select").change(function() {
+          var localeSelect = $("#locale-select");
+          var request = JSON.stringify({
+            xsrf_token: localeSelect.data("xsrf-token"),
+            payload: {
+              selected: localeSelect.val()
+            }
+          });
+          $.ajax({
+            url: "rest/locale",
+            type: "POST",
+            data: {request: request},
+            dataType: "text",
+            success: function(data) {
+              data = parseJson(data);
+              if (data.status == 200) {
+                window.location.reload();
+              }
+            }
+          });
+        });
+      });
+    </script>
+
+    
+    
+
+    <div class="gcb-html-hook" id="base-before-head-tag-ends"><!-- base.before_head_tag_ends --></div>
+  </head>
+
+  <body data-gcb-page-locale="en_US">
+    <div class='invisiblePopupDiv' id='termsDiv'>
+       <div class='gcb-pull-right'>
+       <a class='closeXButton' onClick='hidePopupDiv("termsDiv"); return false;'>X</a>
+       </div>
+       <iframe src='/modules/nptel/assets/html/terms.html' class='popupIframe'></iframe>
+      </div>
+    <div class='invisiblePopupDiv' id='honorDiv'>
+       <div class='gcb-pull-right'>
+       <a class='closeXButton' onClick='hidePopupDiv("honorDiv"); return false;'>X</a>
+       </div>
+       <iframe src='/modules/nptel/assets/html/honor_code.html' class='popupIframe'></iframe>
+      </div>
+    <div class='invisiblePopupDiv' id='faqDiv'>
+       <div class='gcb-pull-right'>
+       <a class='closeXButton' onClick='hidePopupDiv("faqDiv"); return false;'>X</a>
+       </div>
+       <iframe src='/modules/nptel/assets/html/faq.html' class='popupIframe'></iframe>
+    </div>
+
+    <div class="gcb-html-hook" id="base-after-body-tag-begins"><!-- base.after_body_tag_begins --></div>
+
+    <script>
+      // Course-Builder specific setup for Google Tag Manager.  Iff
+      // Tag Managers is enabled, the values in the dataLayer list of
+      // dicts is made available to Tag Manager macros.
+      dataLayer = [{
+        'course_title': 'Programming in C++',
+        'event': 'default',  // Explicit value meaning not-really-set.
+        }];
+
+      function gcbSetPageInfo(dict) {
+        dataLayer.push(dict);
+      }
+
+      // Invoke page-specific block so that any calls to gcbReportPageInfo()
+      // are made before we hit the Tag Manager call, below.
+      
+  if ('gcbSetPageInfo' in window) {
+    gcbSetPageInfo({
+      'page_type': 'student_profile',
+    });
+  }
+
+    </script>
+
+    
+
+    <!-- ButterBar -->
+    <div class="gcb-butterbar-container">
+      <div id="gcb-butterbar-top" class="gcb-butterbar" style="margin-top:50px" aria-live="polite">
+        <p id="gcb-butterbar-message"></p>
+        <a id="gcb-butterbar-close">X</a>
+      </div>
+    </div>
+
+    <!-- logo bar -->
+     <div id="gcb-header" role="banner"  
+      >
+    <div class="gcb-header-aux">
+      <div class="gcb-aux clearfix">
+        <p class="gcb-course-image">
+          <a id="gcb-header-logo" href="./">
+            
+              <img src="/modules/nptel/assets/img/nptel-logo.png"
+                   alt="NPTEL">
+            
+          </a>
+        </p>
+
+     
+       <div class="gcb-username" onmouseover='showMenu()' onmouseout='hideMenu()'>
+          vallikannu96@gmail.com <small>▼</small>
+          
+          <div class="gcb-profile" id="logout-div" >
+            
+              
+                <a href="/explorer/profile">Profile</a>
+              
+            
+            
+            
+            <a href="https://onlinecourses.nptel.ac.in/_ah/logout?continue=https://www.google.com/accounts/Logout%3Fcontinue%3Dhttps://appengine.google.com/_ah/logout%253Fcontinue%253Dhttps://onlinecourses.nptel.ac.in/noc16_cs17/student/home%26service%3Dah">
+              
+              Logout
+            </a>
+          </div>
+       </div>
+     
+         </div>
+      </div>
+    </div>
+
+    
+  <!-- nav bar -->
+  <div class="gcb-nav gcb-complex" id="gcb-nav-x">
+    <div class="gcb-aux">
+      <a class="gcb-nav-course-title" href="/explorer">Courses</a>
+      <span class="gcb-nav-course-title">&raquo;</span>
+      <a class="gcb-nav-course-title" href="course">Programming in C++</a>
+      <div class="gcb-pull-right"><ul class="clearfix">
+
+        <!-- left-aligned links in order -->
+        <div class="gcb-html-hook" id="base-after-navbar-begins"><!-- base.after_navbar_begins --></div>
+        <li >
+          
+          <a href="announcements">Announcements</a>
+        </li>
+        
+          <li >
+            
+            <a href="forum">Forum</a>
+          </li>
+        
+        
+          <li class='active'>
+            
+            <a href="student/home">Progress</a>
+          </li>
+         
+        
+              <li >
+                
+                <a href="student/mentor">Mentor</a>
+              </li>
+              
+        
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <!-- top section -->
+    
+   <div id="gcb-main-body">
+    <div class="is-wrapper">
+      <div class="gcb-aux">
+        
+
+        <div class="gcb-html-hook" id="base-after-top-content-ends"><!-- base.after_top_content_ends --></div>
+
+        <!-- main section -->
+        
+
+<div id="gcb-main">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="gcb-nav" id="gcb-nav-left" role="navigation">
+   <div class='gcb-aside'>
+  <h2>Course outline</h2>
+
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_1" >
+  <div  class="unit_heading" 
+    id="unit_heading_1"
+    onclick='toggleSubUnitNavBar("subunit_navbar_1")'>
+     How to access the portal ? </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_1">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=1&lesson=2">How to access the homepage ?</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-2">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=1&lesson=3">How to access the course page ?</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-3">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=1&lesson=4">How to access the MCQ, MSQ and Programming assignments?</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-4">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=1&lesson=5">How to access subjective assignments ?</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-5">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+            
+              
+            
+              
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_22" >
+  <div  class="unit_heading" 
+    id="unit_heading_22"
+    onclick='toggleSubUnitNavBar("subunit_navbar_22")'>
+     Week 1 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_22">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=22&lesson=23">Module 1: Recap of C (Lecture 01)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-23">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=22&lesson=24">Module 1: Recap of C (Lecture 02)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-24">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=22&lesson=25">Module 1: Recap of C (Lecture 03)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-25">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=22&lesson=26">Module 2 : Programs with IO and Loop (Lecture 04)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-26">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=22&lesson=27">Module 3: Arrays and Strings (Lecture 05)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-27">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=22&lesson=29">Module 4: Sorting and Searching (Lecture 06)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-29">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=22&lesson=30">Module 5: Stack and Its Applications (Lecture 07)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-30">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="assessment?name=40">Quiz : Week1-Assignment1</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-40">
+</div>
+      
+    </div></li>
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_28" >
+  <div  class="unit_heading" 
+    id="unit_heading_28"
+    onclick='toggleSubUnitNavBar("subunit_navbar_28")'>
+     Week 2: </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_28">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=31">Module 6: Constants and Inline Functions (Lecture 08)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-31">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=48">Module 6: Constants and Inline Functions (Contd.) (Lecture 09)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-48">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=49">Module 7: Reference and Pointer (Lecture 10)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-49">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=50">Module 7: Reference and Pointer (Contd.) (Lecture 11)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-50">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=51">Module 8: Default Parameters and Function Overloading (Lecture 12)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-51">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=52">Module 8: Default Parameters and Function Overloading (Contd.) (Lecture 13)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-52">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=53">Module 8: Default Parameters and Function Overloading (Contd.) (Lecture 14)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-53">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=54">Module 9: Operator Overloading (Lecture 15)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-54">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=55">Module 9: Operator Overloading (Contd.) (Lecture 16)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-55">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=56"> Module 10: Dynamic Memory Management (Lecture 17)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-56">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=28&lesson=58">Module 10: Dynamic Memory Management (Contd.) (Lecture 18)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-58">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="assessment?name=41">Quiz : Week2-Assignment2</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-41">
+</div>
+      
+    </div></li>
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_42" >
+  <div  class="unit_heading" 
+    id="unit_heading_42"
+    onclick='toggleSubUnitNavBar("subunit_navbar_42")'>
+     Week 3 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_42">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=57">Module 11: Classes and Objects (Lecture 19)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-57">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=60">Module 11 (Classes and Objects (Contd.) (Lecture 20)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-60">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=61">Module 12: Access Specifiers (Lecture 21)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-61">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=62">Module 12 : Access Specifiers (Contd.) (lecture 22)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-62">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=63">Module 13 : Constructors, Destructors and Object Lifetime (Lecture 23)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-63">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=64">Module 13: Constructors, Destructors and Object Lifetime (Contd.) (Lecture 24)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-64">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=65">Module 13: Constructors, Destructors and Object Lifetime (Contd.) (Lecture 25)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-65">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=66">Module 14: Copy Constructor and Copy Assignment Operator (Lecture 26)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-66">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=67">Module 14: Copy Constructor and Copy Assignment Operator (Contd.) (Lecture 27)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-67">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=68">Module 14: Copy Constructor and Copy Assignment Operator (Contd.) (Lecture 28)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-68">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=69">Module 15: Const-ness (Lecture 29)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-69">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=42&lesson=71">Module 15 : Const-ness (Contd.) (Lecture 30)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-71">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="assessment?name=73">Quiz : Week 3 - Assignment 3</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-73">
+</div>
+      
+    </div></li>
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_74" >
+  <div  class="unit_heading" 
+    id="unit_heading_74"
+    onclick='toggleSubUnitNavBar("subunit_navbar_74")'>
+     Week 4 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_74">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=74&lesson=75">Module 16: Static Members (Lecture 31)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-75">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=74&lesson=76">Module 17: friend Function and friend  Class (Lecture 32)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-76">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=74&lesson=77">Module 18: Overloading Operator for User Defined Types: Part - I (Lecture 33)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-77">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=74&lesson=78">Module 19: Overloading Operator for User Defined Types: Part - II (Lecture 34)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-78">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=74&lesson=79">Module 20: Namespace (Lecture 35)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-79">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=83">Programming Assignment: 2</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-83">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="assessment?name=84">Quiz : Assignment 4</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-84">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=85">Programming Assignment: 1</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-85">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=87">Programming Assignments: 3</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-87">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=88">Programming Assignments: 4</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-88">
+</div>
+      
+    </div></li>
+  
+            
+          </ul></div>
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_89" >
+  <div  class="unit_heading" 
+    id="unit_heading_89"
+    onclick='toggleSubUnitNavBar("subunit_navbar_89")'>
+     Week 5 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_89">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=89&lesson=90">Module 21: Inheritance : Part I (Lecture 36)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-90">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=89&lesson=91">Module 22: Inheritance : Part II (Lecture 37)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-91">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=89&lesson=92">Module 23: Inheritance : Part III (Lecture 38)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-92">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=89&lesson=93">Module 24: Inheritance : Part IV (Lecture 39)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-93">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=89&lesson=94">Module 25: Inheritance : Part V (Lecture 40)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-94">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="assessment?name=104">Quiz : Assignment 5</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-104">
+</div>
+      
+    </div></li>
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_98" >
+  <div  class="unit_heading" 
+    id="unit_heading_98"
+    onclick='toggleSubUnitNavBar("subunit_navbar_98")'>
+     Week 6 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_98">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=98&lesson=99">Module 26 : Dynamic Binding : Part I (Lecture 41)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-99">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=98&lesson=100">Module 27: Dynamic Binding (Polymorphism) : Part II (Lecture 42)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-100">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=98&lesson=101">Module 28 : Dynamic Binding (Polymorphism) : Part III (Lecture 43)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-101">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=98&lesson=102">Module 29 : Dynamic Binding (Polymorphism) Part IV (Lecture 44)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-102">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=98&lesson=103">Module 30 : Dynamic Binding (Polymorphism) : Part V (Lecture 45)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-103">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=118">Programming Assignments-1</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-118">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=119">Programming Assignments-2</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-119">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=120">Programming Assignment-3</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-120">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=121">Programming Assignment-4</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-121">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=122">Programming Assignment-5</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-122">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=123">Programming Assignment-6</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-123">
+</div>
+      
+    </div></li>
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_105" >
+  <div  class="unit_heading" 
+    id="unit_heading_105"
+    onclick='toggleSubUnitNavBar("subunit_navbar_105")'>
+     Week 7 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_105">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=105&lesson=106">Module 31: Virtual Function Table (Lecture 46)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-106">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=105&lesson=107">Module 32: Type Casting and Cast Operators : Part I (Lecture 47)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-107">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=105&lesson=108">Module 33: Type Casting and Cast Operators : Part II (Lecture 48)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-108">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=105&lesson=109">Module 34: Type Casting and Cast Operators : Part III (Lecture 49)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-109">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=105&lesson=110">Module 35: Multiple Inheritance (Lecture 50)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-110">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=105&lesson=111">Module 35: Multiple Inheritance (Contd.) (Lecture 51)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-111">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=124">Programming Assignment-1</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-124">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=125">Programming Assignment-2</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-125">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=126">Programming Assignment-3</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-126">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=127">Programming Assignment-4</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-127">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="assessment?name=128">Quiz : Week7-Assignment1</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-128">
+</div>
+      
+    </div></li>
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_112" >
+  <div  class="unit_heading" 
+    id="unit_heading_112"
+    onclick='toggleSubUnitNavBar("subunit_navbar_112")'>
+     Week 8 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_112">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=112&lesson=113">Module 36: Exceptions (Error Handling in C) : Part I (Lecture 52)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-113">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=112&lesson=114">Module 37 : Exceptions (Error Handling in C) : Part II (Lecture 53)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-114">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=112&lesson=115">Module 38 : Template (Function Template) : Part I (Lecture 54)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-115">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=112&lesson=116">Module 39 : Template (Function Template) : Part II (Lecture 55)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-116">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=112&lesson=117">Module 40 : Closing Comments (Lecture 56)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-117">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=129">Programming Assignment-4</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-129">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=130">Programming Assignment-1</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-130">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=131">Programming Assignment-2</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-131">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="/noc16_cs17/progassignment?name=132">Programming Assignment-3</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-132">
+</div>
+      
+    </div></li>
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      
+        <a href="assessment?name=133">Quiz : Week 8 - Assignment 1</a>
+      
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-133">
+</div>
+      
+    </div></li>
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_135" >
+  <div  class="unit_heading" 
+    id="unit_heading_135"
+    onclick='toggleSubUnitNavBar("subunit_navbar_135")'>
+     Assignment Solutions </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_135">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=135&lesson=136">Week-1 Solution</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-136">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=135&lesson=137">Week-2 Solution</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-137">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=135&lesson=138">Week-3 Solution</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-138">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=135&lesson=139">Week-4 Solution</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-139">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=135&lesson=140">Week-5 Solution</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-140">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=135&lesson=141">Week-6 Solution</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-141">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=135&lesson=142">Week-7 Solution</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-142">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=135&lesson=143">Week-8 Solution</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-143">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+          </ul></div>
+        
+      
+    
+    &nbsp;
+  </div>
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+</div>
+  
+
+  <div class="gcb-article tab-content" role="main">
+     
+    
+  <div>
+    <h1 class="gcb-unit-header">
+      
+      vallikannu s
+    </h1>
+  </div>
+
+    
+  
+
+    <table class="gcb-student-data-table">
+  <colgroup>
+    <col style="width: 10%">
+    <col>
+  </colgroup>
+
+  <tr>
+    
+    <th align="left">Date enrolled</th>
+    <td>2016-07-09</td>
+  </tr>
+
+  <tr>
+    
+    <th align="left">Email</th>
+    <td>vallikannu96@gmail.com</td>
+  </tr>
+
+  <tr>
+    
+    <th align="left">Name</th>
+    <td>vallikannu s</td>
+  </tr>
+
+  <tr>
+    
+    <th align="left" colspan=2>
+      Assessment scores
+    </th>
+  </tr>
+
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Week1-Assignment1</th>
+      <td>
+        
+          <span id="assessment-score-Week1-Assignment1">90.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Week2-Assignment2</th>
+      <td>
+        
+          <span id="assessment-score-Week2-Assignment2">85.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Week 3 - Assignment 3</th>
+      <td>
+        
+          <span id="assessment-score-Week 3 - Assignment 3">85.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment: 2</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment: 2">100.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Assignment 4</th>
+      <td>
+        
+          <span id="assessment-score-Assignment 4">35.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment: 1</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment: 1">100.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignments: 3</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignments: 3">100.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignments: 4</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignments: 4">100.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Assignment 5</th>
+      <td>
+        
+          <span id="assessment-score-Assignment 5">85.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignments-1</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignments-1">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignments-2</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignments-2">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-3</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-3">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-4</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-4">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-5</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-5">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-6</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-6">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-1</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-1">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-2</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-2">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-3</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-3">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-4</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-4">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Week7-Assignment1</th>
+      <td>
+        
+          <span id="assessment-score-Week7-Assignment1">67.0</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-4</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-4">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-1</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-1">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-2</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-2">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Programming Assignment-3</th>
+      <td>
+        
+          <span id="assessment-score-Programming Assignment-3">--</span>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th align="left">&nbsp;&nbsp;&nbsp;Week 8 - Assignment 1</th>
+      <td>
+        
+          <span id="assessment-score-Week 8 - Assignment 1">100.0</span>
+        
+      </td>
+    </tr>
+  
+
+  
+    
+  
+    
+      <tr>
+        <th align="left">Subscribe/Unsubscribe</th>
+        <td>You are currently unsubscribed from course-related emails.<a href="https://onlinecourses.nptel.ac.in/noc16_cs17/modules/unsubscribe?action=resubscribe&amp;s=915e7b63316f09b419750925114f2efd&amp;email=vallikannu96%40gmail.com">Click here to re-subscribe.</a></td>
+      </tr>
+    
+  
+</table>
+
+    
+      <p>
+        <a href="/explorer/profile">
+          
+          Manage course registration from your profile
+        </a>
+      </p>
+    
+
+  
+
+  </div>
+    <script>
+  
+    showButterBar();
+    </script>
+</div>
+
+        <div class="gcb-html-hook" id="base-after-main-content-ends"><!-- base.after_main_content_ends --></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <!-- footer section -->
+  <div class="gcb-footer" id="gcb-footer">
+        <div class="gcb-aux">
+        <style>
+  .gcb-terms-block2 {
+          margin: auto;
+    max-width: 500px;
+          text-align: center;
+  }
+        </style>
+        <div id="gcb-terms"  class="gcb-terms-block2">
+          <p>&copy; 2014 NPTEL -
+            <a onclick='showPopupDiv("termsDiv"); return false;'>
+              
+              Privacy &amp; Terms
+            </a> - 
+            <a onclick='showPopupDiv("honorDiv"); return false;'>
+              
+              Honor Code
+            </a> - 
+            <a onclick='showPopupDiv("faqDiv"); return false;'>
+              
+              FAQs
+            </a>
+            
+              <script type="text/javascript">
+              (function() {
+               var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+               po.src = 'https://apis.google.com/js/plusone.js?onload=onLoadCallback';
+               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+               })();
+              </script>
+              - <span class="plusone-button" id="plusone-3" style="height: 20px; width: 70px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: top; background-position: initial initial; background-repeat: initial initial; ">
+                <g:plusone size="medium"></g:plusone>
+              </span>
+            
+          </p>
+        </div>
+        </div>
+      <div id="gcb-footer-global" role="contentinfo">
+        <div class="gcb-aux">
+          <div class="footer-logo-block">
+            <section>
+              <h3>A project of</h3>
+                  <a href="http://nptel.iitm.ac.in" target="_blank">
+                  <img src="/modules/nptel/assets/img/footer-logo-nptel.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>In association with</h3>
+                  <a href="http://www.nasscom.in" target="_blank">
+                  <img src="/modules/nptel/assets/img/footer-logo-nasscom.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>Funded by</h3>
+                  <a href="http://mhrd.gov.in" target="_blank">
+                  <img src="/modules/nptel/assets/img/footer-mhrd.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>Powered by</h3>
+                  <a href="http://www.google.com" target="_blank">
+                  <img src="/modules/nptel/assets/img/footer-logo-google.png"/>
+                  </a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46447969-1', 'nptel.ac.in');
+      ga('send', 'pageview');
+    </script>
+    
+    <div class="gcb-html-hook" id="base-before-body-tag-ends"><!-- base.before_body_tag_ends --></div>
+
+ </body>
+</html>

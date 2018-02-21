@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta property="fb:admins" content="100000360226458" >
+
+		<title>USB Cellphone Charger circuit</title>
+		<link rel="stylesheet" href="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/js/magnific-popup/css/magnific-popup.css"/>
+		<link rel="stylesheet" href="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/css/jquery.mCustomScrollbar.css" />
+		
+	  
+<!-- This site is optimized with the Yoast SEO plugin v3.3.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Now you can charge your Mobile Phone from the USB outlet of PC. This simple usb cellphone charger circuit can give regulated 4.7 volts for charging the mob"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.electroschematics.com/4983/usb-mobile-charger/" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="ElectroSchematics.com &raquo; USB Cellphone Charger Circuit Comments Feed" href="http://www.electroschematics.com/4983/usb-mobile-charger/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.electroschematics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='http://www.electroschematics.com/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='etuts-style-css'  href='http://www.electroschematics.com/wp-content/themes/electroschematics-v2/style.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?ver=4.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='arconix-shortcodes-css'  href='http://www.electroschematics.com/wp-content/plugins/arconix-shortcodes/includes/css/arconix-shortcodes.min.css?ver=2.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.electroschematics.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cookielawinfo-style-css'  href='http://www.electroschematics.com/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpProQuiz_front_style-css'  href='http://www.electroschematics.com/wp-content/plugins/wp-pro-quiz/css/wpProQuiz_front.min.css?ver=0.37' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-q2a-style-css'  href='http://www.electroschematics.com/wp-content/plugins/wp-q2a-pack/inc/style/style-q2a.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.electroschematics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-lightbox-2.min.css-css'  href='http://www.electroschematics.com/wp-content/plugins/wp-lightbox-2/styles/lightbox.min.css?ver=1.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='tabber_widget-tabber-widget-basic-light-css'  href='http://www.electroschematics.com/wp-content/plugins/tabber-widget/templates/basic-light.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wppb_stylesheet-css'  href='http://www.electroschematics.com/wp-content/plugins/profile-builder-hobbyist/assets/css/style-front-end.css?ver=2.3.9' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.electroschematics.com/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/themes/electroschematics-v2/js/bootstrap.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/themes/electroschematics-v2/js/jquery.matchHeight.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/themes/electroschematics-v2/js/comments.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/themes/electroschematics-v2/js/singlepage.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/themes/electroschematics-v2/js/jquery.mCustomScrollbar.concat.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/themes/electroschematics-v2/js/main.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/themes/electroschematics-v2/js/magnific-popup/js/jquery.magnific-popup.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.3'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/plugins/tabber-widget/js/jquery.idTabs.min.js?ver=4.5.2'></script>
+<link rel='https://api.w.org/' href='http://www.electroschematics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.electroschematics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.electroschematics.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel='shortlink' href='http://www.electroschematics.com/?p=4983' />
+<link rel="alternate" type="application/json+oembed" href="http://www.electroschematics.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.electroschematics.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F&#038;format=xml" />
+<link rel="stylesheet" type="text/css" href="http://www.electroschematics.com/wp-content/plugins/wp-code-highlight/css/desert.css" media="screen" />
+<link rel="icon" href="http://www.electroschematics.com/wp-content/uploads/2016/05/cropped-favicon-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="http://www.electroschematics.com/wp-content/uploads/2016/05/cropped-favicon-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.electroschematics.com/wp-content/uploads/2016/05/cropped-favicon-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="http://www.electroschematics.com/wp-content/uploads/2016/05/cropped-favicon-1-270x270.jpg" />
+
+
+
+		<link rel="pingback" href="http://www.electroschematics.com/xmlrpc.php" />
+
+		<script src="https://apis.google.com/js/platform.js"></script>
+		<script type='text/javascript'>
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			(function() {
+				var gads = document.createElement('script');
+				gads.async = true;
+				gads.type = 'text/javascript';
+				var useSSL = 'https:' == document.location.protocol;
+				gads.src = (useSSL ? 'https:' : 'http:') +
+					'//www.googletagservices.com/tag/js/gpt.js';
+				var node = document.getElementsByTagName('script')[0];
+				node.parentNode.insertBefore(gads, node);
+			})();
+		</script>
+				<script type='text/javascript'>
+			var google_ads = [];
+			googletag.cmd.push(function() {
+
+				// modify the [800, 600] to set the max screen size to display the mobile ad size
+				var billboardMapping = googletag.sizeMapping().
+				addSize([800,375], [970, 250]).
+				addSize([0, 0], [320, 50]).
+				build();
+
+				var leaderMapping = googletag.sizeMapping().
+				addSize([800,300], [728, 90]).
+				addSize([0, 0], [320, 60]).
+				build();
+
+				var filmstripMapping = googletag.sizeMapping().
+				addSize([800,600], [300,  600]).
+				addSize([0, 0], [300, 300]).
+				build();
+
+				google_ads.push(googletag.defineSlot('/74317539/ElectroSchematics', [[970, 250], [320, 50]], 'div-gpt-ad-billboard-smartphonebanner').setTargeting('sec', ['powersupply']).defineSizeMapping(billboardMapping).addService(googletag.pubads()));
+				googletag.defineSlot('/74317539/ElectroSchematics', [300, 250], 'div-gpt-ad-medium-rectangle').setTargeting('sec', ['powersupply']).addService(googletag.pubads());
+				google_ads.push(googletag.defineSlot('/74317539/ElectroSchematics', [[300, 600], [300, 300]], 'div-gpt-ad-filmstrip').setTargeting('sec', ['powersupply']).defineSizeMapping(filmstripMapping).addService(googletag.pubads()));
+				google_ads.push(googletag.defineSlot('/74317539/ElectroSchematics', [[728,  90], [320, 60]], 'div-gpt-ad-leader-smartphonebanner').setTargeting('sec', ['powersupply']).defineSizeMapping(leaderMapping).addService(googletag.pubads()));
+				googletag.defineSlot('/74317539/ElectroSchematics', [[300, 450]], 'div-gpt-ad-ti-featured-design').setTargeting('sec', ['tidesigns']).addService(googletag.pubads());
+				googletag.pubads().enableSingleRequest();
+				googletag.enableServices();
+			});
+		</script>
+	</head>
+	<body>
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KMPGTZ"
+					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KMPGTZ');</script>
+	<!-- End Google Tag Manager -->
+
+			<!-- analytics -->
+		<script type="text/javascript">
+			window.google_analytics_uacct = "UA-4765780-3";
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-4765780-3', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<!-- analytics -->
+		
+	<!-- facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&&appId=264778010376278&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- facebook -->
+
+	<!-- Overlay Search -->
+	<div class="overlay-menu hidden-xs">
+		<div class="overlay-head clearfix">
+			<a href="/"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/logo-white.svg" alt=""></a>
+			<a href="#" class="close">X</a>
+		</div>
+		<div class="overlay-cont">
+			
+<div class="search-wrap">	
+	<div class="search-input-wrap">
+		<form method="get" id="searchform" action="http://www.electroschematics.com/" class="clearfix">
+			<input type="text" name="s" id="s" class="search-input"
+			value=""
+			/>
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+</div>			<div class="single-page content-wrap container">
+				<div class="row-cnt row">
+										<div class="col-md-12">
+						<div class="row">
+							<div class="page-section-title col-md-12">
+								<h1>Top 10 Articles</h1>
+							</div>
+							<div class="clearboth clearfix">
+																	<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12847/intelligent-blackout-notifier/"><img width="1201" height="383" src="http://www.electroschematics.com/wp-content/uploads/2016/08/Black_Alert_Circuit.png" class="attachment-full size-full wp-post-image" alt="blackcout alert circuit" srcset="http://www.electroschematics.com/wp-content/uploads/2016/08/Black_Alert_Circuit.png 1201w, http://www.electroschematics.com/wp-content/uploads/2016/08/Black_Alert_Circuit-100x32.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/08/Black_Alert_Circuit-400x128.png 400w, http://www.electroschematics.com/wp-content/uploads/2016/08/Black_Alert_Circuit-768x245.png 768w, http://www.electroschematics.com/wp-content/uploads/2016/08/Black_Alert_Circuit-550x175.png 550w" sizes="(max-width: 1201px) 100vw, 1201px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12847/intelligent-blackout-notifier/">Intelligent Blackout Notifier</a></h2>
+												<h3 class="author">T.K. Hareendran -  08/27/16</h3>
+												<div class="content-desc">The intelligent blackout notifier is a mains supply monitoring device that will trigger a distinct alarm when the <a href="http://www.electroschematics.com/12847/intelligent-blackout-notifier/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12839/automatic-fragrance-dispenser-circuit/"><img width="1053" height="387" src="http://www.electroschematics.com/wp-content/uploads/2016/08/AFD-3.png" class="attachment-full size-full wp-post-image" alt="circuit" srcset="http://www.electroschematics.com/wp-content/uploads/2016/08/AFD-3.png 1053w, http://www.electroschematics.com/wp-content/uploads/2016/08/AFD-3-100x37.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/08/AFD-3-400x147.png 400w, http://www.electroschematics.com/wp-content/uploads/2016/08/AFD-3-768x282.png 768w, http://www.electroschematics.com/wp-content/uploads/2016/08/AFD-3-550x202.png 550w" sizes="(max-width: 1053px) 100vw, 1053px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12839/automatic-fragrance-dispenser-circuit/">Automatic Fragrance Dispenser Circuit</a></h2>
+												<h3 class="author">T.K. Hareendran -  08/10/16</h3>
+												<div class="content-desc">I am building an automatic fragrance dispenser (AFD) from scratch and, because I am a little crazy, I <a href="http://www.electroschematics.com/12839/automatic-fragrance-dispenser-circuit/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12833/retrofit-cistern-overflow-monitor/"><img width="938" height="416" src="http://www.electroschematics.com/wp-content/uploads/2016/08/RCOM-1.png" class="attachment-full size-full wp-post-image" alt="toilet cistern overflow monitor schematic" srcset="http://www.electroschematics.com/wp-content/uploads/2016/08/RCOM-1.png 938w, http://www.electroschematics.com/wp-content/uploads/2016/08/RCOM-1-100x44.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/08/RCOM-1-400x177.png 400w, http://www.electroschematics.com/wp-content/uploads/2016/08/RCOM-1-768x341.png 768w, http://www.electroschematics.com/wp-content/uploads/2016/08/RCOM-1-550x244.png 550w" sizes="(max-width: 938px) 100vw, 938px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12833/retrofit-cistern-overflow-monitor/">Retrofit Toilet Cistern Overflow Monitor</a></h2>
+												<h3 class="author">T.K. Hareendran -  08/01/16</h3>
+												<div class="content-desc">Toilet cistern overflows not only waste water but increase the risk for slip-and-fall injuries. The retrofit cistern overflow <a href="http://www.electroschematics.com/12833/retrofit-cistern-overflow-monitor/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12827/wireless-remote-camera-flash-trigger/"><img width="635" height="362" src="http://www.electroschematics.com/wp-content/uploads/2016/07/CFT-1.png" class="attachment-full size-full wp-post-image" alt="CFT-1" srcset="http://www.electroschematics.com/wp-content/uploads/2016/07/CFT-1.png 635w, http://www.electroschematics.com/wp-content/uploads/2016/07/CFT-1-100x57.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/07/CFT-1-400x228.png 400w, http://www.electroschematics.com/wp-content/uploads/2016/07/CFT-1-550x314.png 550w" sizes="(max-width: 635px) 100vw, 635px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12827/wireless-remote-camera-flash-trigger/">Wireless Remote Camera Flash Trigger</a></h2>
+												<h3 class="author">T.K. Hareendran -  07/25/16</h3>
+												<div class="content-desc">Here is an efficient and economical circuit for a wireless remote camera flash trigger, useful for capturing scenes <a href="http://www.electroschematics.com/12827/wireless-remote-camera-flash-trigger/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12819/air-cooler-water-pump-guard/"><img width="741" height="453" src="http://www.electroschematics.com/wp-content/uploads/2016/07/WPG-2.png" class="attachment-full size-full wp-post-image" alt="water pump guard schematic" srcset="http://www.electroschematics.com/wp-content/uploads/2016/07/WPG-2.png 741w, http://www.electroschematics.com/wp-content/uploads/2016/07/WPG-2-100x61.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/07/WPG-2-400x245.png 400w, http://www.electroschematics.com/wp-content/uploads/2016/07/WPG-2-550x336.png 550w" sizes="(max-width: 741px) 100vw, 741px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12819/air-cooler-water-pump-guard/">Air Cooler Water Pump Guard</a></h2>
+												<h3 class="author">T.K. Hareendran -  07/17/16</h3>
+												<div class="content-desc">Compact, submersible water pumps are mostly used on air coolers, aquariums, and fountains. If the pump runs out <a href="http://www.electroschematics.com/12819/air-cooler-water-pump-guard/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12808/cordless-live-fence-tester/"><img width="502" height="214" src="http://www.electroschematics.com/wp-content/uploads/2016/07/LFT-1.png" class="attachment-full size-full wp-post-image" alt="live fence tester" srcset="http://www.electroschematics.com/wp-content/uploads/2016/07/LFT-1.png 502w, http://www.electroschematics.com/wp-content/uploads/2016/07/LFT-1-100x43.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/07/LFT-1-400x171.png 400w" sizes="(max-width: 502px) 100vw, 502px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12808/cordless-live-fence-tester/">Cordless Live Fence Tester</a></h2>
+												<h3 class="author">T.K. Hareendran -  07/11/16</h3>
+												<div class="content-desc">Electrified fencing is usually used to control animals with smaller and cheaper fence constructions than would otherwise be <a href="http://www.electroschematics.com/12808/cordless-live-fence-tester/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12799/diy-rcc-smps-circuits/"><img width="600" height="365" src="http://www.electroschematics.com/wp-content/uploads/2016/07/RSC-1.png" class="attachment-full size-full wp-post-image" alt="RSC-1" srcset="http://www.electroschematics.com/wp-content/uploads/2016/07/RSC-1.png 600w, http://www.electroschematics.com/wp-content/uploads/2016/07/RSC-1-100x61.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/07/RSC-1-400x243.png 400w, http://www.electroschematics.com/wp-content/uploads/2016/07/RSC-1-550x335.png 550w" sizes="(max-width: 600px) 100vw, 600px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12799/diy-rcc-smps-circuits/">DIY RCC SMPS Circuits</a></h2>
+												<h3 class="author">T.K. Hareendran -  07/08/16</h3>
+												<div class="content-desc">Every non-battery-powered electronic device requires converting offline ac power to some dc voltage for powering electronics. Nowadays, efficient <a href="http://www.electroschematics.com/12799/diy-rcc-smps-circuits/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12791/solar-window-charger-circuit/"><img width="1077" height="676" src="http://www.electroschematics.com/wp-content/uploads/2016/06/SWC-4.png" class="attachment-full size-full wp-post-image" alt="Solar Window Charger Schematic" srcset="http://www.electroschematics.com/wp-content/uploads/2016/06/SWC-4.png 1077w, http://www.electroschematics.com/wp-content/uploads/2016/06/SWC-4-100x63.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/06/SWC-4-400x251.png 400w, http://www.electroschematics.com/wp-content/uploads/2016/06/SWC-4-768x482.png 768w, http://www.electroschematics.com/wp-content/uploads/2016/06/SWC-4-550x345.png 550w" sizes="(max-width: 1077px) 100vw, 1077px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12791/solar-window-charger-circuit/">Solar Window Charger Circuit</a></h2>
+												<h3 class="author">T.K. Hareendran -  06/30/16</h3>
+												<div class="content-desc">Solar window chargers have several advantages when compared with other charger types. You can stick this DIY solar <a href="http://www.electroschematics.com/12791/solar-window-charger-circuit/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12778/bbc-microbit-product-review/"><img width="1600" height="1076" src="http://www.electroschematics.com/wp-content/uploads/2016/06/image02.jpg" class="attachment-full size-full wp-post-image" alt="bbc microbit front" srcset="http://www.electroschematics.com/wp-content/uploads/2016/06/image02.jpg 1600w, http://www.electroschematics.com/wp-content/uploads/2016/06/image02-100x67.jpg 100w, http://www.electroschematics.com/wp-content/uploads/2016/06/image02-400x269.jpg 400w, http://www.electroschematics.com/wp-content/uploads/2016/06/image02-768x516.jpg 768w, http://www.electroschematics.com/wp-content/uploads/2016/06/image02-550x370.jpg 550w" sizes="(max-width: 1600px) 100vw, 1600px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12778/bbc-microbit-product-review/">BBC micro:bit product review</a></h2>
+												<h3 class="author">Enrico Miglino -  06/16/16</h3>
+												<div class="content-desc">While almost all of the electronic distributors, hobbyist sites, and online electronic shops have the BBC micro:bit available <a href="http://www.electroschematics.com/12778/bbc-microbit-product-review/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="http://www.electroschematics.com/12770/basement-flood-alarm/"><img width="927" height="292" src="http://www.electroschematics.com/wp-content/uploads/2016/06/BFA-4.png" class="attachment-full size-full wp-post-image" alt="555 flood alarm" srcset="http://www.electroschematics.com/wp-content/uploads/2016/06/BFA-4.png 927w, http://www.electroschematics.com/wp-content/uploads/2016/06/BFA-4-100x31.png 100w, http://www.electroschematics.com/wp-content/uploads/2016/06/BFA-4-400x126.png 400w, http://www.electroschematics.com/wp-content/uploads/2016/06/BFA-4-768x242.png 768w, http://www.electroschematics.com/wp-content/uploads/2016/06/BFA-4-550x173.png 550w" sizes="(max-width: 927px) 100vw, 927px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="http://www.electroschematics.com/12770/basement-flood-alarm/">Basement Flood Alarm Circuit</a></h2>
+												<h3 class="author">T.K. Hareendran -  06/11/16</h3>
+												<div class="content-desc">Even though floods don't always rate high on our list of concerns, if we get an early warning <a href="http://www.electroschematics.com/12770/basement-flood-alarm/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="footer-wrap" style="clear: both;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<h2>The Basics</h2>
+						<ul class="basics">
+							<li><a>About Us</a></li>
+							<li><a href="/contact-us">Contact Us</a></li>
+							<li><a href="/participate">Participate</a></li>
+							<li><a href="/privacy-policy">Privacy Policy</a></li>
+							<li><a href="/terms">Terms of Use</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<h2>For Advertisers</h2>
+						<ul class="advertisers">
+<!--							<li><a href="http://www.aspencore.com/AspenCoreMediaGuide.pdf" target="_blank">Media Guide</a></li>-->
+							<li><a href="mailto:sales@aspencore.com">Contact Sales</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<h2>Aspencore Network</h2>
+						<ul class="network">
+							<li>ElectroSchematics</li>
+							<li><a href="http://www.electronics-tutorials.ws/" target="_blank">Electronics Tutorials</a></li>
+							<li><a href="http://www.electronicproducts.com/" target="_blank">Electronic Products</a></li>
+							<li><a href="http://www.21ic.com/" target="_blank">21IC</a></li>
+							<li><a href="http://embedded-control-europe.com/" target="_blank">Embedded Control Europe</a></li>
+							<li><a href="http://www.elektroda.pl/" target="_blank">Elektroda</a></li>
+							<li><a href="http://www.eeweb.com/" target="_blank">EEWeb</a></li>
+							<li><a href="http://www.mikrocontroller.net/en" target="_blank">Mikrocontroller</a></li>
+							<li><a href="http://www.engineersgarage.com/" target="_blank">Engineers Garage</a></li>
+							<li><a href="http://www.eem.com/" target="_blank">EEM</a></li>
+							<li><a href="http://www.embedded-know-how.com/" target="_blank">Embedded Know How</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<h2>Connect With Us</h2>
+						<ul class="social">
+							<li><a href="https://www.facebook.com/groups/electroschematics/" rel="nofollow" target="_blank"><span class="symbol">&#xe227;</span><span class="desc">Facebook</span></a></li>
+<!--							<li><a><span class="symbol">&#xe286;</span><span class="desc">Twitter</span></a></li>-->
+							<li><a href="https://www.youtube.com/user/ElectroSchematics"><span class="symbol">&#xe299;</span><span class="desc">YouTube</span></a></li>
+<!--							<li><a><span class="symbol">&#xe239;</span><span class="desc">Google+</span></a></li>-->
+<!--							<li><a><span class="symbol">&#xe271;</span><span class="desc">RSS</span></a></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bttm-most">
+				<div class="container">
+					<div class="row">
+						<div class="col-a col-sm-6 col-md-6">
+							All contents are Copyright &copy; 2016 by AspenCore, Inc. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		</div>
+	</div>
+	<!-- End -->
+
+	<!-- Overlay Mouser panel -->
+<div class="overlay-mouser">
+	<div class="overlay-mouser-cont">
+		<div class="container">
+			<div class="section-a">
+				 &nbsp;<a class="close-panel" href="#"><span>Close</span>&nbsp; <i class="fa fa-times-circle"></i></a>
+			</div>
+			<div class="section-b">
+				<a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http" target="_blank" class="mouser-site-click"><img src="https://www.ti.com/assets/images/ic-logo.svg" alt="" class="mouser-site-click"></a> <!--<span>Browse Products</span>-->
+			</div>
+			<div class="section-c">
+				<ul class="products-list">
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/amplifiersandlinears/amplifiersandlinears.page?HQS=hpa-null-null-elschemflyaway-bs-lp-amplifiers-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Amplifiers</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/interface/interface.page?HQS=hpa-null-null-elschemflyaway-bs-lp-interface-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Interface</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/non-isolated-dc-dc-switching-regulator-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-nonisolatedDCDC-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Non-Isolated DC/DC</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/voltage-reference-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-voltageref-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Voltage References</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/audio/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-audio-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Audio</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/linear-regulators-ldo-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-linearregulator-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Linear Regulator (LDO)</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/powermanagement/power_portal.page?HQS=hpa-null-null-elschemflyaway-bs-lp-pwrmgmt-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Management</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/webench/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-WEBENCH-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Webench</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/battery-management-products-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-battery-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Battery Management</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/logic/home_overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-logic-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Logic</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/power-management-multi-channel-ic-pmic-solutions-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-pmic-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Management IC (PMIC)</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/general/docs/refdesignsearchresults.tsp?HQS=hpa-null-null-elschemflyaway-bs-lp-TIDesigns-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">TI Designs</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/clockandtiming/clock_and_timing.page?HQS=hpa-null-null-elschemflyaway-bs-lp-clocks-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Clock and Timing</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/mosfet-and-igbt-gate-drivers-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-MOSFET-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">MOSFET and IGBT Gate Drivers</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/power-modules-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-powermodules-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Modules</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?https://store.ti.com?HQS=hpa-null-null-elschemflyaway-bs-store-store-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">TI Store</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/dataconverters/data_converter.page?HQS=hpa-null-null-elschemflyaway-bs-lp-dataconverters-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Data Converters</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/motordrivers/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-motordrivers-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Motor Drivers</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/sensors/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-sensors-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Sensors</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://my.ti.com?HQS=hpa-null-null-elschemflyaway-bs-myti-myti-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">MyTI Registration</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="visit-ti">
+			<a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com?HQS=hpa-null-null-elschemflyaway-bs-lp-homepage-wwe&DCM=yes" target="_blank" class="mouser-product-click">visit ti.com<img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow-white.png"></a>
+		</div>
+	</div>
+
+</div>
+<!-- End -->	<div id="topBar" class="top-bar-1-wrap mbile" style="position:fixed;top:0;width:100%;">
+		<div class="container">
+			<div class="row">
+				<div class="menu col-xs-3 col-sm-4 col-md-4">
+					<div id="show" class="orb"></div>
+				</div>
+				<div class="main-logo col-xs-6 col-sm-4 col-md-4">
+					<a href="/"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/main-logo.svg" alt=""></a>
+				</div>
+				<div class="col-xs-3 col-sm-4 col-md-4">
+					<div class="search mbile"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top-bar-1-wrap dsktop">
+		<div class="topbar-most clearfix">
+			<div class="col-xs-3 col-sm-3 col-md-3">
+				<div class="user-login">
+											<a href="/log-in"><i class="fa fa-user"></i> &nbsp;&nbsp;Login</a>
+									</div>
+			</div>
+			<div class="main-logo col-xs-6 col-sm-6 col-md-6">
+				<a href="/"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/main-logo.svg" alt=""></a>
+			</div>
+			<div class="for-overlay col-xs-3 col-sm-3 col-md-3" data-mode="search">
+				<div class="search"></div>
+			</div>
+		</div>
+		<div class="sub-top-bar">
+			<div class="hidden-xs clearfix">
+
+				<div class="col-b">
+					<div class="mouser-dropdown pull-right mouser-open-widget-click">
+						<img src="https://www.ti.com/assets/images/ic-logo.svg" alt="" class="mouser-open-widget-click"><span>Looking for the latest from TI? </span><span class="glyphicon glyphicon-chevron-down"></span>
+					</div>
+				</div>
+
+				<div class="col-a">
+					<ul id="main-menu" class="menu clearfix"><li id="menu-item-12664" class="menu-item-has-children"><a href="http://www.electroschematics.com/various/">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-12650"><a href="http://www.electroschematics.com/arduino/">Arduino</a></li>
+	<li id="menu-item-12656"><a href="http://www.electroschematics.com/lights/">Lights</a></li>
+	<li id="menu-item-12665"><a href="http://www.electroschematics.com/various/datasheet/">Datasheets</a></li>
+	<li id="menu-item-12648"><a href="http://www.electroschematics.com/555-circuits/">555</a></li>
+	<li id="menu-item-12658" class="current-post-ancestor current-menu-parent current-post-parent"><a href="http://www.electroschematics.com/power-supply/">Power supply</a></li>
+	<li id="menu-item-12654"><a href="http://www.electroschematics.com/ece-projects/">ECE projects</a></li>
+	<li id="menu-item-12649"><a href="http://www.electroschematics.com/alarm/">Alarms</a></li>
+	<li id="menu-item-12659"><a href="http://www.electroschematics.com/radio/">Radio</a></li>
+	<li id="menu-item-12657"><a href="http://www.electroschematics.com/measurement/">Measure</a></li>
+	<li id="menu-item-12651"><a href="http://www.electroschematics.com/audio/">Audio</a></li>
+	<li id="menu-item-12661"><a href="http://www.electroschematics.com/solar-projects/">Solar</a></li>
+	<li id="menu-item-12670"><a href="http://www.electroschematics.com/various/useful/">Useful</a></li>
+	<li id="menu-item-12653"><a href="http://www.electroschematics.com/diy/">DIY</a></li>
+	<li id="menu-item-12662"><a href="http://www.electroschematics.com/tested/">Tested</a></li>
+	<li id="menu-item-12663"><a href="http://www.electroschematics.com/theory/">Theory</a></li>
+	<li id="menu-item-12655"><a href="http://www.electroschematics.com/hobby/">Hobby</a></li>
+	<li id="menu-item-12652"><a href="http://www.electroschematics.com/basic-electronics/">Basic</a></li>
+</ul>
+</li>
+<li id="menu-item-12672"><a href="http://www.electroschematics.com/tools/">Tools</a></li>
+<li id="menu-item-12673" class="menu-item-has-children tutorials-cont"><a href="#">Tutorials</a>
+<ul class="sub-menu">
+	<li id="menu-item-12675"><a href="/tag/arduino-tutorial/">Arduino Tutorial</a></li>
+	<li id="menu-item-12676"><a href="/tag/avr-tutorial/">AVR Tutorial</a></li>
+	<li id="menu-item-12677"><a href="/tag/pic-tutorial/">PIC Tutorial</a></li>
+</ul>
+</li>
+<li id="menu-item-10563"><a title="electronics labs" href="http://www.electroschematics.com/labs/">Labs</a></li>
+<li id="menu-item-8571"><a title="electronics engineering Q&#038;A" href="/qa/">Q&#038;A</a></li>
+<li id="menu-item-12679"><a href="http://www.electroschematics.com/electronics-quizzes/">Quizzes</a></li>
+<li id="menu-item-12846"><a href="http://ti-content-syndication.electroschematics.com">Reference Designs</a></li>
+<li id="menu-item-8572"><a title="contact page" rel="nofollow" href="http://www.electroschematics.com/contact-us/">Contact</a></li>
+</ul>				</div>
+
+			</div>
+		</div>
+	</div>
+
+<div class="body-frame body-single">
+			<div class="side-menu mbile">
+			<div id="side-menu-head" class="side-menu-head clearfix">
+				<a href="/"><img class="logo" src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/lg-white-mbl.svg" alt=""></a>
+				<a href="#" class="close">X</a>
+			</div>
+			<div class="the-list">
+
+				
+<div class="search-wrap">	
+	<div class="search-input-wrap">
+		<form method="get" id="searchform" action="http://www.electroschematics.com/" class="clearfix">
+			<input type="text" name="s" id="s" class="search-input"
+			value=""
+			/>
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+</div>
+				  <ul id="sm-main-menu" class="sm-menu"><li class="menu-item-has-children"><a href="http://www.electroschematics.com/various/">Projects</a>
+<ul class="sub-menu">
+	<li><a href="http://www.electroschematics.com/arduino/">Arduino</a></li>
+	<li><a href="http://www.electroschematics.com/lights/">Lights</a></li>
+	<li><a href="http://www.electroschematics.com/various/datasheet/">Datasheets</a></li>
+	<li><a href="http://www.electroschematics.com/555-circuits/">555</a></li>
+	<li class="current-post-ancestor current-menu-parent current-post-parent"><a href="http://www.electroschematics.com/power-supply/">Power supply</a></li>
+	<li><a href="http://www.electroschematics.com/ece-projects/">ECE projects</a></li>
+	<li><a href="http://www.electroschematics.com/alarm/">Alarms</a></li>
+	<li><a href="http://www.electroschematics.com/radio/">Radio</a></li>
+	<li><a href="http://www.electroschematics.com/measurement/">Measure</a></li>
+	<li><a href="http://www.electroschematics.com/audio/">Audio</a></li>
+	<li><a href="http://www.electroschematics.com/solar-projects/">Solar</a></li>
+	<li><a href="http://www.electroschematics.com/various/useful/">Useful</a></li>
+	<li><a href="http://www.electroschematics.com/diy/">DIY</a></li>
+	<li><a href="http://www.electroschematics.com/tested/">Tested</a></li>
+	<li><a href="http://www.electroschematics.com/theory/">Theory</a></li>
+	<li><a href="http://www.electroschematics.com/hobby/">Hobby</a></li>
+	<li><a href="http://www.electroschematics.com/basic-electronics/">Basic</a></li>
+</ul>
+</li>
+<li><a href="http://www.electroschematics.com/tools/">Tools</a></li>
+<li class="menu-item-has-children tutorials-cont"><a href="#">Tutorials</a>
+<ul class="sub-menu">
+	<li><a href="/tag/arduino-tutorial/">Arduino Tutorial</a></li>
+	<li><a href="/tag/avr-tutorial/">AVR Tutorial</a></li>
+	<li><a href="/tag/pic-tutorial/">PIC Tutorial</a></li>
+</ul>
+</li>
+<li><a title="electronics labs" href="http://www.electroschematics.com/labs/">Labs</a></li>
+<li><a title="electronics engineering Q&#038;A" href="/qa/">Q&#038;A</a></li>
+<li><a href="http://www.electroschematics.com/electronics-quizzes/">Quizzes</a></li>
+<li><a href="http://ti-content-syndication.electroschematics.com">Reference Designs</a></li>
+<li><a title="contact page" rel="nofollow" href="http://www.electroschematics.com/contact-us/">Contact</a></li>
+</ul>				<div class="footer-wrap" style="clear: both;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<h2>The Basics</h2>
+						<ul class="basics">
+							<li><a>About Us</a></li>
+							<li><a href="/contact-us">Contact Us</a></li>
+							<li><a href="/participate">Participate</a></li>
+							<li><a href="/privacy-policy">Privacy Policy</a></li>
+							<li><a href="/terms">Terms of Use</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<h2>For Advertisers</h2>
+						<ul class="advertisers">
+<!--							<li><a href="http://www.aspencore.com/AspenCoreMediaGuide.pdf" target="_blank">Media Guide</a></li>-->
+							<li><a href="mailto:sales@aspencore.com">Contact Sales</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<h2>Aspencore Network</h2>
+						<ul class="network">
+							<li>ElectroSchematics</li>
+							<li><a href="http://www.electronics-tutorials.ws/" target="_blank">Electronics Tutorials</a></li>
+							<li><a href="http://www.electronicproducts.com/" target="_blank">Electronic Products</a></li>
+							<li><a href="http://www.21ic.com/" target="_blank">21IC</a></li>
+							<li><a href="http://embedded-control-europe.com/" target="_blank">Embedded Control Europe</a></li>
+							<li><a href="http://www.elektroda.pl/" target="_blank">Elektroda</a></li>
+							<li><a href="http://www.eeweb.com/" target="_blank">EEWeb</a></li>
+							<li><a href="http://www.mikrocontroller.net/en" target="_blank">Mikrocontroller</a></li>
+							<li><a href="http://www.engineersgarage.com/" target="_blank">Engineers Garage</a></li>
+							<li><a href="http://www.eem.com/" target="_blank">EEM</a></li>
+							<li><a href="http://www.embedded-know-how.com/" target="_blank">Embedded Know How</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<h2>Connect With Us</h2>
+						<ul class="social">
+							<li><a href="https://www.facebook.com/groups/electroschematics/" rel="nofollow" target="_blank"><span class="symbol">&#xe227;</span><span class="desc">Facebook</span></a></li>
+<!--							<li><a><span class="symbol">&#xe286;</span><span class="desc">Twitter</span></a></li>-->
+							<li><a href="https://www.youtube.com/user/ElectroSchematics"><span class="symbol">&#xe299;</span><span class="desc">YouTube</span></a></li>
+<!--							<li><a><span class="symbol">&#xe239;</span><span class="desc">Google+</span></a></li>-->
+<!--							<li><a><span class="symbol">&#xe271;</span><span class="desc">RSS</span></a></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bttm-most">
+				<div class="container">
+					<div class="row">
+						<div class="col-a col-sm-6 col-md-6">
+							All contents are Copyright &copy; 2016 by AspenCore, Inc. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>				
+			</div>
+		</div>	<div class="body-cont">
+		<div class="mask-cont clearfix">
+			<div class="single-page content-wrap container">
+				<div class="row-cnt row">
+
+											<div class="home-top-ads">
+							<div id="text-104" class="widgets widget_text">			<div class="textwidget"><div id='div-gpt-ad-billboard-smartphonebanner'><script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-billboard-smartphonebanner'); });
+</script>
+</div>
+</div>
+		</div>						</div>
+					
+					<div class="col-sm-12 col-md-12">
+						<div class="breadcrumb">
+							<!-- Breadcrumb NavXT 5.4.0 -->
+<a title="Back Home" href="http://www.electroschematics.com" class="home">Home</a><span class="separator">&nbsp;/&nbsp;</span><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the Power supply category archives." href="http://www.electroschematics.com/power-supply/" class="taxonomy category"><span property="name">Power supply</span></a><meta property="position" content="2"></span><span class="separator">&nbsp;/&nbsp;</span><span property="itemListElement" typeof="ListItem"><span property="name">USB Cellphone Charger Circuit</span><meta property="position" content="3"></span>						</div>
+					</div>
+					<div class="col-md-8 clearboth">
+											<div class="section row">
+							<div class="single-wrap col-md-12">
+								<div class="content-cont">
+
+									<div class="col-sm-6 col-md-6 no-padd">
+										<div class="thumb-feat">
+																																	   <a class="the_thumb" data-card="false" href="http://www.electroschematics.com/wp-content/uploads/2010/02/USB_A_pinout.png" rel="lightbox"><img width="205" height="145" src="http://www.electroschematics.com/wp-content/uploads/2010/02/USB_A_pinout.png" class="attachment-full size-full wp-post-image" alt="USB_A_pinout" srcset="http://www.electroschematics.com/wp-content/uploads/2010/02/USB_A_pinout.png 205w, http://www.electroschematics.com/wp-content/uploads/2010/02/USB_A_pinout-150x106.png 150w" sizes="(max-width: 205px) 100vw, 205px" /></a>
+																					</div>
+									</div>
+									<div class="desc col-sm-6 col-md-6">
+										<h1>USB Cellphone Charger Circuit</h1>										<div class="author">
+											<a href="http://www.electroschematics.com/author/mohankumar/">D Mohankumar</a>
+										</div>
+
+										<!-- Social Buttons -->
+										<div id="social_buttons" style="margin: 15px 0;">
+																						<span class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.electroschematics.com/4983/usb-mobile-charger/" target="_blank"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/fb-dark.png" width="25px" alt="Share"/></a></span>
+											<span class="twitter">
+												<a target="_blank" rel="nofollow" href="https://twitter.com/share" data-via="electrocircuits">
+													<img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/tw-dark.png" width="25px" alt="Tweet"/>
+												</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+											</span>
+											<span class="ask_qa"><a href="/qa/" target="_blank" title="ask a question"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/icn-question-orb.png" width="25px" alt=""/></a></span>
+										</div>
+										<div class="col-md-12 no-padd">
+											<div class='posts-tags'><ul><li><a href='/tag/cell-phone-circuits'>cell phones</a></li><li><a href='/tag/usb-circuits'>USB</a></li></ul></div>										</div>
+
+									</div>
+									<div class="clear-b"></div>
+									<div class="main-wrap">
+									<p>Now you can charge your Mobile Phone from the USB outlet of PC. This simple usb cellphone charger circuit can give regulated 4.7 volts for charging the mobile phone. USB outlet can give 5 volts DC and 100 mA current which is sufficient for the slow charging of mobile phones.<br />
+<span id="more-4983"></span></p>
+<h2>USB Cell Phone Charger Circuit Schematic</h2>
+<p><a target="_blank" href="http://www.electroschematics.com/wp-content/uploads/2010/02/USB-Mobile-Charger.png" rel="lightbox[4983]"><img src="http://www.electroschematics.com/wp-content/uploads/2010/02/USB-Mobile-Charger.png" alt="usb mobile charger circuit diagram" width="433" height="247" class="alignnone size-full wp-image-4984" srcset="http://www.electroschematics.com/wp-content/uploads/2010/02/USB-Mobile-Charger.png 433w, http://www.electroschematics.com/wp-content/uploads/2010/02/USB-Mobile-Charger-150x85.png 150w, http://www.electroschematics.com/wp-content/uploads/2010/02/USB-Mobile-Charger-400x228.png 400w" sizes="(max-width: 433px) 100vw, 433px" /></a></p>
+<p>Most of the Mobile Phone battery is rated 3.6 volts at 1000 to 1300 mAh. These battery packs have 3 NiMh or Lithium cells having 1.2 volt rating. Usually the battery pack requires 4.5 volts and 300-500 mA current for fast charging. But low current charging is better to increase the efficiency of the battery. The circuit described here provides 4.7 regulated voltage and sufficient current for the slow charging of the mobile phone. </p>
+<p>Transistor T1 is used to give the regulated output. Any medium power NPN transistor like CL100, BD139, TIP122 can be used. Zener diode ZD controls the output voltage and D1 protects the polarity of the output supply. Front end of the circuit should be connected to a A type USB plug. Connect a red wire to pin1 and black wire to pin 4 of the plug for easy polarity identification. Connect the output to a suitable charger pin to connect it with the mobile phone. After assembling the circuit, insert the USB plug into the socket and measure the output from the circuit. If the output is OK and polarity is correct, connect it with the mobile phone. </p>
+<blockquote><p><strong>Note:</strong> If the polarity is incorrect, it will destroy the cellphone battery. So take extreme care.</p></blockquote>
+									</div>
+																		
+
+																		<div class="clearfix content-nav">
+										<div class="prev_next">
+																							<div class="pn-holder col-md-6 col-sm-6"><div class="prev"><a href="http://www.electroschematics.com/4981/fake-car-alarm/" rel="prev"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/arrow_alt_left_inv.png" alt="previous"><div><span>Previous</span><br />Fake Car Alarm Circuit</div></a></div></div>
+																																		<div class="pn-holder col-md-6 col-sm-6"><div class="next"><a href="http://www.electroschematics.com/4987/flashing-brake-light-for-motorcycles/" rel="next"><div><span>Next</span><br />Flashing Brake Light for Motorcycles Circuit</div><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/arrow_alt_right_inv.png" alt="next"></a></div></div>
+																					</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-page-content">
+							
+<div id="widgets_for_shortcodes" class="amr-widget-area"><div class="tabber-widget widget_yarpp_widget" id="yarpp_widget-2"><h5 class="tabber-widget-title">Related Tutorials</h5><div class='yarpp-related-widget'>
+<ol><li><a href="http://www.electroschematics.com/4000/mobile-phone-travel-charger/" rel="bookmark">Travel Mobile Phone Charger Circuit</a></li><li><a href="http://www.electroschematics.com/5362/mobile-charger-using-bike-battery/" rel="bookmark">Cellphone Charger Using Bike Battery</a></li><li><a href="http://www.electroschematics.com/4809/solar-based-multipurpose-charger/" rel="bookmark">Solar Based Multipurpose Charger Circuit</a></li><li><a href="http://www.electroschematics.com/6253/regulated-charger/" rel="bookmark">12V Voltage Regulated Charger</a></li></ol>
+</div>
+</div></div>
+						</div>
+						
+<div id="comments" class="comments-wrap clearfix">
+
+	<input type="hidden" name="has_view_more" id="has_view_more" value="1">
+	<input type="hidden" name="first_comment_page" id="first_comment_page" value="">
+	<input type="hidden" name="recent_comment_page" id="recent_comment_page" value="">
+	<h2 class="comments-count">51 Comments		<div class="toggle-close"></div>
+		<div class="toggle-open"></div>
+	</h2>
+	<div class="comment-content">
+		<div class="comment-form-cont">
+							<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title"><h2>Join the conversation!</h2> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/4983/usb-mobile-charger/#respond" style="display:none;">Cancel reply</a></small><div class="notice_error">Error! Please fill all fields.</div><p class="must-log-in">You must be <a href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">logged in</a> to post a comment.</p>		</div><!-- #respond -->
+				</div>
+
+		<div class="comment-list-cont">
+			
+				<ul class="comment-list">
+										
+<li class="comment even thread-even depth-1" id="li-comment-1895496">
+    <div id="comment-1895496" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://2.gravatar.com/avatar/b5cabb41cc9ade79a972933f195b361d?s=50&#038;d=identicon&#038;r=g' srcset='http://2.gravatar.com/avatar/b5cabb41cc9ade79a972933f195b361d?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">AMRINDER SINGH</cite>            </div>
+            
+            <div class="comment-text">
+                <p>i want 1amp 2amp mobile charger circuit in smps base .. isolated miminum cost</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1895496">January 24th 2016 | 8:47 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1870551">
+    <div id="comment-1870551" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://0.gravatar.com/avatar/329d3cd6aa224aecddc214636ab88d5e?s=50&#038;d=identicon&#038;r=g' srcset='http://0.gravatar.com/avatar/329d3cd6aa224aecddc214636ab88d5e?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">emax</cite>            </div>
+            
+            <div class="comment-text">
+                <p>The circuit works fine without D1 diode to charge 3.7V Li-Ion battery.<br />
+The transistor gets into partial saturation with sufficient base current with 4.7V at the base due to 1 Watt zener and R1 of 51 ohms. The base to collector voltage drop is around 0.8V for BD139  and for a fully charged battery voltage of 4.2V the current drops to the minimum level.</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1870551">November 29th 2015 | 7:38 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment even thread-even depth-1" id="li-comment-1764995">
+    <div id="comment-1764995" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://2.gravatar.com/avatar/8250b715437dbec7f67bbb5d8101ddc2?s=50&#038;d=identicon&#038;r=g' srcset='http://2.gravatar.com/avatar/8250b715437dbec7f67bbb5d8101ddc2?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">Name *nilesh</cite>            </div>
+            
+            <div class="comment-text">
+                <p>how can i increas ampear of mobile charger from 700ma to 1000ma</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1764995">August 16th 2015 | 8:43 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment byuser comment-author-C_Mitra odd alt thread-odd thread-alt depth-1" id="li-comment-1725059">
+    <div id="comment-1725059" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://0.gravatar.com/avatar/fbb3fd5a753109057e389a8fd8a605c4?s=50&#038;d=identicon&#038;r=g' srcset='http://0.gravatar.com/avatar/fbb3fd5a753109057e389a8fd8a605c4?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">C.Mitra</cite>            </div>
+            
+            <div class="comment-text">
+                <p>I had last posted on this topic on October 27, 2012, nearly three years back. It is amazing that even after I had pointed out some serious mistakes in the circuit diagram, the schematic has not been corrected. Is is sad to see the moderator of this blog ignore the suggestions of a well wisher like me. The gullible people visiting this page are being fooled into thinking that this is a path-breaking invention of the 21st century! THIS CIRCUIT CAN NOT WORK! But who cares?</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1725059">June 28th 2015 | 2:43 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+<ul class="children">
+
+<li class="comment byuser comment-author-C_Mitra even depth-2" id="li-comment-1727437">
+    <div id="comment-1727437" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://0.gravatar.com/avatar/fbb3fd5a753109057e389a8fd8a605c4?s=50&#038;d=identicon&#038;r=g' srcset='http://0.gravatar.com/avatar/fbb3fd5a753109057e389a8fd8a605c4?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">C.Mitra</cite>            </div>
+            
+            <div class="comment-text">
+                <p>Hello Anurag, you can try Awagatam Majumdar&#8217;s blog <a href="http://www.homemade-circuits.com/" rel="nofollow">http://www.homemade-circuits.com/</a> for a huge archive of circuits and ideas.</p>
+<p>Most of the circuits are workable, some are tried out and some are experimental ideas needing more research. The best part of his blog is that he regularly answers to most of the queries put to him by his readers patiently, which is not commonly seen in other websites and blogs. Hope this will help.</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1727437">July 01st 2015 | 10:18 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span>                 </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment odd alt depth-2" id="li-comment-1726697">
+    <div id="comment-1726697" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://2.gravatar.com/avatar/8783fe71e219ea6bea59d575e18dd130?s=50&#038;d=identicon&#038;r=g' srcset='http://2.gravatar.com/avatar/8783fe71e219ea6bea59d575e18dd130?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">Anurag</cite>            </div>
+            
+            <div class="comment-text">
+                <p>Hello Mitra sir, really happy to know your concern for starters like us.</p>
+<p>Is there any websites or blogs similar which would be helpful for the beginners.</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1726697">June 30th 2015 | 2:44 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span>                 </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li class="comment even thread-even depth-1" id="li-comment-1689217">
+    <div id="comment-1689217" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://1.gravatar.com/avatar/48a3d09ca9d29b1ac20b7e478ea8410e?s=50&#038;d=identicon&#038;r=g' srcset='http://1.gravatar.com/avatar/48a3d09ca9d29b1ac20b7e478ea8410e?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">israfil</cite>            </div>
+            
+            <div class="comment-text">
+                <p>hello sir how to upgrade output current eg 4.7 volt 300 ma to 4.7 1 amps</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1689217">May 20th 2015 | 5:19 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1650985">
+    <div id="comment-1650985" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://1.gravatar.com/avatar/a92d60175d7681027db7895fc0d12c85?s=50&#038;d=identicon&#038;r=g' srcset='http://1.gravatar.com/avatar/a92d60175d7681027db7895fc0d12c85?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">arxaios</cite>            </div>
+            
+            <div class="comment-text">
+                <p>THIS DO NOT WORK&#8230; do not try it ..!!  This is a simple 5Volt supply but it is not charging any mobile phone&#8230;maybe Chinese Phones probably&#8230;! </p>
+<p>The philosophy behind charging a iphone or a mobile phone is not with this circuit. The D+ and D- pins of an USB must be used for this to work. </p>
+<p>Thank you.</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1650985">April 19th 2015 | 4:21 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment even thread-even depth-1" id="li-comment-1388548">
+    <div id="comment-1388548" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://2.gravatar.com/avatar/babf8c3a90d67904658b201abe54dafa?s=50&#038;d=identicon&#038;r=g' srcset='http://2.gravatar.com/avatar/babf8c3a90d67904658b201abe54dafa?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">windrage</cite>            </div>
+            
+            <div class="comment-text">
+                <p>debating not helpful, very counter productive in the case of new readers and new hobbyists. site needs venting area for vents and proper informational structure without the babble for people who just came to learn and not get confused thank you.</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-1388548">December 29th 2014 | 5:10 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-299456">
+    <div id="comment-299456" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://1.gravatar.com/avatar/7e2cbe00a0936f1942cfe1607f6c8264?s=50&#038;d=identicon&#038;r=g' srcset='http://1.gravatar.com/avatar/7e2cbe00a0936f1942cfe1607f6c8264?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">raj</cite>            </div>
+            
+            <div class="comment-text">
+                <p>I require the circuit diagram of mobile charger from which we can charge mobile using AC supply(Ac mobile charger)</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-299456">April 20th 2014 | 7:31 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment even thread-even depth-1" id="li-comment-258978">
+    <div id="comment-258978" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://1.gravatar.com/avatar/d3c8e55a25e1ea9436b81f41ca9a7ad8?s=50&#038;d=identicon&#038;r=g' srcset='http://1.gravatar.com/avatar/d3c8e55a25e1ea9436b81f41ca9a7ad8?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">ABHISHEK KUMAR</cite>            </div>
+            
+            <div class="comment-text">
+                <p>Sir,<br />
+    I want to make a Emergency light using 4.5 volt battery please tell me ckt diagram .</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-258978">November 04th 2012 | 7:16 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-258762">
+    <div id="comment-258762" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='http://2.gravatar.com/avatar/85f99ac20884caf8f59999ef7c80b9da?s=50&#038;d=identicon&#038;r=g' srcset='http://2.gravatar.com/avatar/85f99ac20884caf8f59999ef7c80b9da?s=100&amp;d=identicon&amp;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">boyet</cite>            </div>
+            
+            <div class="comment-text">
+                <p>thankz&#8230; sir, I&#8217;m about to try this gadget&#8230;<br />
+can I used this gadget to charge AAAX3 batteries?</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="http://www.electroschematics.com/4983/usb-mobile-charger/#comment-258762">October 24th 2012 | 6:19 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="http://www.electroschematics.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.electroschematics.com%2F4983%2Fusb-mobile-charger%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+				</ul>
+
+									<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
+						<div id="view_more"><a href="http://www.electroschematics.com/4983/usb-mobile-charger/comment-page-2/#comments" >View More</a></div>
+						<div class="comment-loading"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/loading.gif" alt="Loading"></div>
+					</nav>
+				
+									</div>
+	</div>
+</div>
+											</div>
+
+										<div class="sidebar col-md-4">
+						<div id="trigger-point"></div>
+						<div id="wppb-login-widget-3" class="widgets login clearfix"><h2>Login</h2><div id="wppb-login-wrap" class="wppb-user-forms">
+		<form name="loginform" id="loginform" action="http://www.electroschematics.com/wp-login.php" method="post">
+			
+			<p class="login-username">
+				<label for="user_login">Email</label>
+				<input type="text" name="log" id="user_login" class="input" value="" size="20" />
+			</p>
+			<p class="login-password">
+				<label for="user_pass">Password</label>
+				<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" />
+			</p>
+			
+			<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label></p>
+			<p class="login-submit">
+				<input type="submit" name="wp-submit" id="wppb-submit" class="button-primary" value="Log In" />
+				<input type="hidden" name="redirect_to" value="http://www.electroschematics.com/" />
+			</p>
+			<input type="hidden" name="wppb_login" value="true"/><input type="hidden" name="wppb_form_location" value="widget"/><input type="hidden" name="wppb_request_url" value="http://www.electroschematics.com/4983/usb-mobile-charger/"/><input type="hidden" name="wppb_lostpassword_url" value="http://www.electroschematics.com/lostpassword"/><input type="hidden" name="wppb_redirect_priority" value="top"/><input type="hidden" name="wppb_referer_url" value="https://www.google.co.in/"/>
+		</form><p class="login-register-lost-password"><a href="http://www.electroschematics.com/register">Register</a> | <a href="http://www.electroschematics.com/lostpassword">Lost your password?</a></p></div></div>        <div class="latest-comments wrapper clearfix">
+            <div class="widgets">
+                <div class="l-comments box">
+                    <h2>Latest Article Comments</h2>                    <div class="clearfix">
+                                                                            
+                                                                                                                            <div class="comment-content show-comment">
+                                                                    <a href="http://www.electroschematics.com/9937/3-7v-li-ion-battery-charger-circuit/#li-comment-1901250">3.7V Li-Ion Battery Charger...</a>
+                                    <div>"Hi All,
+Please guide to me to build a circuit which should have following features.
+I need a"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content show-comment">
+                                                                    <a href="http://www.electroschematics.com/11140/arduino-raspberry-pi-camera-interface/#li-comment-1901248">Arduino & Raspberry Pi Camera...</a>
+                                    <div>"Hi!!
+
+I´ve tryed without any luck to find a MIPI Library which helped me interfacing an Arduino"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content show-comment">
+                                                                    <a href="http://www.electroschematics.com/5132/dark-activated-relay/#li-comment-1901247">Dark Activated Relay...</a>
+                                    <div>"can we check the output using led and"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content show-comment">
+                                                                    <a href="http://www.electroschematics.com/6899/12v-ldo-solar-charge-control/#li-comment-1901244">12V LDO Solar Charge...</a>
+                                    <div>"Hi Keith,
+it's great too see such a simple yet effective controller circuit. Could you please send"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content show-comment">
+                                                                    <a href="http://www.electroschematics.com/1961/lm7805-voltage-regulator/#li-comment-1901241">3 Ampere LM7805 Voltage...</a>
+                                    <div>"hello, transistors
+T1 = BD240C
+T2 = 2N2955
+They not sold in my country, with another transistor"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content hide-comment">
+                                                                    <a href="http://www.electroschematics.com/8809/spy-rf-bug-detector/#li-comment-1901240">RF Spy Bug Detector...</a>
+                                    <div>"Hi Sir excellent work! I want to do something similar. But I want to power up a RF detector circuit"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content hide-comment">
+                                                                    <a href="http://www.electroschematics.com/9937/3-7v-li-ion-battery-charger-circuit/#li-comment-1901238">3.7V Li-Ion Battery Charger...</a>
+                                    <div>"Hi All,
+ Please guide to me to build a circuit which should have following features.
+I need a"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content hide-comment">
+                                                                    <a href="http://www.electroschematics.com/9155/12v-to-220v-voltage-inverter/#li-comment-1901236">12V DC to 220V AC Inverter...</a>
+                                    <div>"this is probably Romanian Language and the English Translation will be 
+"Hello Marian, this"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content hide-comment">
+                                                                    <a href="http://www.electroschematics.com/12799/diy-rcc-smps-circuits/#li-comment-1901235">DIY RCC SMPS...</a>
+                                    <div>"Datas &amp;schematic diagrams are simple&amp;useful&amp;understandable..tnx"</div>
+                                </div>
+                                                                                
+                                                                                                                            <div class="comment-content hide-comment">
+                                                                    <a href="http://www.electroschematics.com/10115/triac-lamp-dimmer-snap-on/#li-comment-1901234">TRIAC Dimmer Avoids...</a>
+                                    <div>"Is there a way do make a dimmer like this, but controlled by a microcontroler (arduino for"</div>
+                                </div>
+                                                                        </div>
+                        <div class="vm-com">
+                            <a href="" class="view-more-comments">View More</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="tabber_widget-2" class="widgets tabber_widget clearfix">	<div id="tabber_widget-2-content" class="tabber-widget-0 tabber-widget-basic-light">
+		<ul class="tabber-widget-tabs">
+											<li><a class="selected" href="#tab-tabber_widget-2-1">New Projects</a></li>
+											<li><a href="#tab-tabber_widget-2-2">Recent Q&A</a></li>
+					</ul>
+								<div id="tab-tabber_widget-2-1" class="tabber-widget-content">
+						<div class="tabber-widget widget_recent_entries" id="recent-posts-37">		<h5 class="tabber-widget-title">Recent Posts</h5>		<ul>
+					<li>
+				<a href="http://www.electroschematics.com/12847/intelligent-blackout-notifier/">Intelligent Blackout Notifier</a>
+						</li>
+					<li>
+				<a href="http://www.electroschematics.com/12839/automatic-fragrance-dispenser-circuit/">Automatic Fragrance Dispenser Circuit</a>
+						</li>
+					<li>
+				<a href="http://www.electroschematics.com/12833/retrofit-cistern-overflow-monitor/">Retrofit Toilet Cistern Overflow Monitor</a>
+						</li>
+					<li>
+				<a href="http://www.electroschematics.com/12827/wireless-remote-camera-flash-trigger/">Wireless Remote Camera Flash Trigger</a>
+						</li>
+					<li>
+				<a href="http://www.electroschematics.com/12819/air-cooler-water-pump-guard/">Air Cooler Water Pump Guard</a>
+						</li>
+				</ul>
+		</div>					</div>
+								<div id="tab-tabber_widget-2-2" class="tabber-widget-content">
+				<div class="tabber-widget widget_q2a_recent_questions" id="q2a_recent_questions-5"><h5 class="tabber-widget-title">Recent Questions</h5><ul class="qa-question-widget"><li><a href="/qa/10685/" >arduino based sensor project</a><span> </span></li><li><a href="/qa/10684/" >Quiz Answers</a><span> </span></li><li><a href="/qa/10683/" >Motion Detector with reset-able tally/counter LED</a><span> </span></li><li><a href="/qa/10678/" >how can I open the garage automatically using basic cellular phone?</a><span> </span></li><li><a href="/qa/10677/" >my sony KLV - 22BX350 goes off after 10minities</a><span> </span></li></ul></div>			</div>
+			</div>
+	
+	<script type="text/javascript">
+		jQuery("#tabber_widget-2-content ul").idTabs();
+	</script>
+</div><div id="text-105" class="widgets widget_text clearfix">			<div class="textwidget"><!-- /74317539/ElectroSchematics -->
+<div class='rec-ads'>
+<div id='div-gpt-ad-medium-rectangle' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-medium-rectangle'); });
+</script>
+</div>
+</div></div>
+		</div><div id="text-111" class="widgets widget_text clearfix">			<div class="textwidget"><div class="featured-design">
+<div id='div-gpt-ad-ti-featured-design'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-ti-featured-design'); });
+</script>
+</div>
+</div></div>
+		</div><div id="text-106" class="widgets widget_text clearfix">			<div class="textwidget"><div class='filmstrip'>
+<div id='div-gpt-ad-filmstrip'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-filmstrip'); });
+</script>
+</div>
+</div></div>
+		</div><div id="pardot-forms-2" class="widgets pardot-forms clearfix">
+<div class="pardot-forms-widget">
+	
+	<div class="pardot-forms-body">
+		<iframe class="pardotform" src="http://go.aspencore.com/l/114242/2016-06-17/3lhkwy" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+	</div>
+</div>
+</div><div id="text-110" class="widgets widget_text clearfix">			<div class="textwidget"><div class='subscribe-now'>
+<a href="/subscribe" rel="nofollow"><img src="/wp-content/uploads/2016/06/subscribe-btn.jpg" alt="subscribe now" /></a>
+</div></div>
+		</div><div id="mostpopulartags-2" class="widgets widget_most_popular_tags clearfix"><h2>Popular Tags</h2><ul class='wp-tag-cloud'>
+	<li><a href='http://www.electroschematics.com/tag/ic-datasheet-circuits/' class='tag-link-50 tag-link-position-1' title='106 topics' style='font-size: 14px;'>IC datasheet</a></li>
+	<li><a href='http://www.electroschematics.com/tag/led-circuits/' class='tag-link-194 tag-link-position-2' title='68 topics' style='font-size: 14px;'>LED</a></li>
+	<li><a href='http://www.electroschematics.com/tag/audio-amplifier-circuits/' class='tag-link-86 tag-link-position-3' title='47 topics' style='font-size: 14px;'>audio amplifier</a></li>
+	<li><a href='http://www.electroschematics.com/tag/battery-charger-circuits/' class='tag-link-94 tag-link-position-4' title='37 topics' style='font-size: 14px;'>battery chargers</a></li>
+	<li><a href='http://www.electroschematics.com/tag/741-circuits/' class='tag-link-337 tag-link-position-5' title='32 topics' style='font-size: 14px;'>741</a></li>
+	<li><a href='http://www.electroschematics.com/tag/fm-transmitter-circuits/' class='tag-link-185 tag-link-position-6' title='29 topics' style='font-size: 14px;'>fm transmitters</a></li>
+	<li><a href='http://www.electroschematics.com/tag/avr-tutorial/' class='tag-link-1290 tag-link-position-7' title='26 topics' style='font-size: 14px;'>AVR tutorial</a></li>
+	<li><a href='http://www.electroschematics.com/tag/solar-charger-circuits/' class='tag-link-736 tag-link-position-8' title='26 topics' style='font-size: 14px;'>solar chargers</a></li>
+	<li><a href='http://www.electroschematics.com/tag/led-flasher-circuits/' class='tag-link-179 tag-link-position-9' title='24 topics' style='font-size: 14px;'>led flashers</a></li>
+	<li><a href='http://www.electroschematics.com/tag/ldr-circuits/' class='tag-link-752 tag-link-position-10' title='23 topics' style='font-size: 14px;'>LDR</a></li>
+</ul>
+</div><div id="text-103" class="widgets widget_text clearfix">			<div class="textwidget"><div class='join-fb'>
+<a href="https://www.facebook.com/groups/electroschematics/" rel="nofollow" target="_blank"><img src="http://www.electroschematics.com/wp-content/uploads/2016/05/fb-side-bnn.png" alt="electroschematics group on facebook" /></a>
+</div>
+</div>
+		</div>					</div>
+				</div>
+			</div>
+
+	<div class="ads-full">
+		<div id="text-108" class="widgets widget_text">			<div class="textwidget"><div id='div-gpt-ad-leader-smartphonebanner'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-leader-smartphonebanner'); });
+</script>
+</div>
+</div>
+		</div>	</div>
+
+	<!--WP Code Highlight_start-->
+	<script type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</script>
+	<script type="text/javascript" src="http://www.electroschematics.com/wp-content/plugins/wp-code-highlight/js/wp-code-highlight.js"></script>
+	<!--WP Code Highlight_end-->
+			</div>
+			<div class="footer-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-2">
+							<h2>The Basics</h2>
+							<ul class="basics">
+								<li><a>About Us</a></li>
+								<li><a href="/contact-us">Contact Us</a></li>
+								<li><a href="/participate">Participate</a></li>
+								<li><a href="/privacy-policy">Privacy Policy</a></li>
+								<li><a href="/terms">Terms of Use</a></li>
+								<li><a href="https://www.surveymonkey.com/r/2SMMN52" target="_blank">Feedback</a></li>
+							</ul>
+						</div>
+						<div class="msc-padd col-xs-12 col-sm-6 col-md-2">
+							<h2>For Advertisers</h2>
+							<ul class="advertisers">
+<!--								<li><a href="http://www.aspencore.com/AspenCoreMediaGuide.pdf" target="_blank">Media Guide</a></li>-->
+								<li><a href="mailto:sales@aspencore.com">Contact Sales</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-5">
+							<h2>Aspencore Network</h2>
+							<ul class="network">
+								<li><a>ElectroSchematics</a></li>
+								<li><a href="http://www.electronics-tutorials.ws/" target="_blank">Electronics Tutorials</a></li>
+								<li><a href="http://www.electronicproducts.com/" target="_blank">Electronic Products</a></li>
+								<li><a href="http://www.21ic.com/" target="_blank">21IC</a></li>
+								<li><a href="http://embedded-control-europe.com/" target="_blank">Embedded Control Europe</a></li>
+								<li><a href="http://www.elektroda.pl/" target="_blank">Elektroda</a></li>
+								<li><a href="http://www.eeweb.com/" target="_blank">EEWeb</a></li>
+								<li><a href="http://www.mikrocontroller.net/en" target="_blank">Mikrocontroller</a></li>
+								<li><a href="http://www.engineersgarage.com/" target="_blank">Engineers Garage</a></li>
+								<li><a href="http://www.eem.com/" target="_blank">EEM</a></li>
+								<li><a href="http://www.embedded-know-how.com/" target="_blank">Embedded Know How</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-3">
+							<h2>Connect with Us</h2>
+							<ul class="social-foot">
+								<li><a href="https://www.facebook.com/groups/electroschematics/" rel="nofollow" target="_blank"><span class="symbol">&#xe227;</span><span class="desc">Facebook</span></a></li>
+								<!--							<li><a><span class="symbol">&#xe286;</span><span class="desc">Twitter</span></a></li>-->
+								<li><a href="https://www.youtube.com/user/ElectroSchematics"><span class="symbol">&#xe299;</span><span class="desc">YouTube</span></a></li>
+								<!--							<li><a><span class="symbol">&#xe239;</span><span class="desc">Google+</span></a></li>-->
+								<!--							<li><a><span class="symbol">&#xe271;</span><span class="desc">RSS</span></a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bttm-most">
+					<div class="container">
+						<div class="row">
+							<div class="col-a col-sm-12 col-md-12">
+								All contents are Copyright &copy; 2016 by AspenCore, Inc. All Rights Reserved.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<!-- Mouser Panel -->
+<div class="mouser-menu">
+	<div class="visible-sec">
+		<img src="https://www.ti.com/assets/images/ic-logo.svg" alt="" class="has-logo">
+		<span>Loooking for the latest from TI?</span>
+	</div>
+	<div class="browse-list-wrap">
+		<ul class="products-list">
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/amplifiersandlinears/amplifiersandlinears.page?HQS=hpa-null-null-elschemflyaway-bs-lp-amplifiers-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Amplifiers</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/non-isolated-dc-dc-switching-regulator-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-nonisolatedDCDC-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Non-Isolated DC/DC</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/audio/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-audio-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Audio</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/powermanagement/power_portal.page?HQS=hpa-null-null-elschemflyaway-bs-lp-pwrmgmt-wwe&DCM=yes" target="_blank"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Management</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/battery-management-products-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-battery-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Battery Management</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/power-management-multi-channel-ic-pmic-solutions-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-pmic-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Management IC (PMIC)</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/clockandtiming/clock_and_timing.page?HQS=hpa-null-null-elschemflyaway-bs-lp-clocks-wwe&DCM=yes"  class="mouser-product-click"target="_blank"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Clock and Timing</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/power-modules-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-powermodules-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Modules</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/dataconverters/data_converter.page?HQS=hpa-null-null-elschemflyaway-bs-lp-dataconverters-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Data Converters</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/sensors/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-sensors-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Sensors</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/interface/interface.page?HQS=hpa-null-null-elschemflyaway-bs-lp-interface-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Interface</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/voltage-reference-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-voltageref-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Voltage References</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/linear-regulators-ldo-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-linearregulator-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Linear Regulator (LDO)</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/webench/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-WEBENCH-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Webench</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/logic/home_overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-logic-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Logic</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/general/docs/refdesignsearchresults.tsp?HQS=hpa-null-null-elschemflyaway-bs-lp-TIDesigns-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">TI Designs</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/mosfet-and-igbt-gate-drivers-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-MOSFET-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">MOSFET and IGBT Gate Drivers</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?https://store.ti.com?HQS=hpa-null-null-elschemflyaway-bs-store-store-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">TI Store</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/motordrivers/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-motordrivers-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">Motor Drivers</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://my.ti.com?HQS=hpa-null-null-elschemflyaway-bs-myti-myti-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow.png">MyTI Registration</a></li>
+
+		</ul>
+	</div>
+	<div class="visit-ti-footer">
+		<a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com?HQS=hpa-null-null-elschemflyaway-bs-lp-homepage-wwe&DCM=yes " target="_blank" class="mouser-product-click">visit ti.com <img src="http://www.electroschematics.com/wp-content/themes/electroschematics-v2/img/right-arrow-white.png"></a>
+	</div>
+</div>
+<!-- End Mouser Panel -->
+<style>
+	iframe[src*="siliconexpert.com"] {
+		position: absolute;
+		z-index : 2;
+		bottom: 0;
+	}
+</style>
+
+<script type="text/javascript">
+	(function() {
+		var cid="electroschematics", arp = document.createElement('script');
+		arp.type = 'text/javascript'; arp.async = true;
+		arp.src = "//reach-cdn.siliconexpert.com/tag/"+cid+".js";
+		var s0 = document.getElementsByTagName('script')[0];
+		s0.parentNode.insertBefore(arp, s0);
+	})();
+</script>
+<div id="cookie-law-info-bar"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.<a href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >Accept</a> <a href="/policy/" id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  >Read More</a></span></div>		
+		<script type="text/javascript">
+			//<![CDATA[
+			jQuery(document).ready(function() {
+				cli_show_cookiebar({
+					settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":true,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
+				});
+			});
+			//]]>
+		</script>
+		
+		<script>cp_popup_url="http://www.electroschematics.com/wp-content/plugins/comment-plus/camera.php";
+function cp_popup() {
+var left = (screen.width - 500)/2;
+var top = (screen.height - 400)/2;
+var params = "width=500, height=400, top=" + top + ", left=" + left;
+    params += ", directories=no,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no";
+    var awin = window.open(cp_popup_url, "cpcamera", params);
+    if (window.focus) awin.focus();
+}
+for (i=0; i<document.forms.length; i++) {
+    if (!document.forms[i].comment_post_ID) continue;
+    document.forms[i].encoding = "multipart/form-data";
+}</script><script type="text/javascript">
+<!--
+piCId = '63352';
+piAId = '115242';
+
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+-->
+</script><script type="text/javascript">
+
+(function($){
+     $('a > img').closest('a').addClass('image-cont');
+})(jQuery);
+
+</script>
+<link rel='stylesheet' id='yarppRelatedCss-css'  href='http://www.electroschematics.com/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.5.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.electroschematics.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/plugins/wp-q2a-pack/inc/js/script-q2a.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JQLBSettings = {"fitToScreen":"1","resizeSpeed":"400","displayDownloadLink":"1","navbarOnTop":"0","loopImages":"","resizeCenter":"","marginSize":"0","linkTarget":"","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","prevLinkText":"\u00ab Previous","nextLinkText":"Next \u00bb","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","jqlb_overlay_opacity":"80","jqlb_overlay_color":"#000000","jqlb_overlay_close":"1","jqlb_border_width":"10","jqlb_border_color":"#ffffff","jqlb_border_radius":"0","jqlb_image_info_background_transparency":"100","jqlb_image_info_bg_color":"#ffffff","jqlb_image_info_text_color":"#000000","jqlb_image_info_text_fontsize":"10","jqlb_show_text_for_image":"1","jqlb_next_image_title":"next image","jqlb_previous_image_title":"previous image","jqlb_next_button_image":"http:\/\/www.electroschematics.com\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/next.gif","jqlb_previous_button_image":"http:\/\/www.electroschematics.com\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/prev.gif","jqlb_maximum_width":"","jqlb_maximum_height":"","jqlb_show_close_button":"1","jqlb_close_image_title":"close image gallery","jqlb_close_image_max_heght":"22","jqlb_image_for_close_lightbox":"http:\/\/www.electroschematics.com\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/closelabel.gif","jqlb_keyboard_navigation":"1","jqlb_popup_size_fix":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-content/plugins/wp-lightbox-2/wp-lightbox-2.min.js?ver=1.3.4.1'></script>
+<script type='text/javascript' src='http://www.electroschematics.com/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.985 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-09-15 15:10:25 -->
+
+<!-- Compression = gzip -->
